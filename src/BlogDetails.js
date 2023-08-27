@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
-import { baseUrl, blogsUrl, homeUrl } from "./Constants";
+import { DELETE, baseUrl, blogsUrl, homeUrl } from "./Constants";
 
 const  BlogDetails = () => {
     const { id } = useParams();
@@ -9,7 +9,7 @@ const  BlogDetails = () => {
     const navigate = useNavigate();
     const handleClick = () => {
         fetch(`${baseUrl}${blogsUrl}/${blog.id}`, {
-            method: 'DELETE'
+            method: DELETE
         }).then(() => {
             navigate(homeUrl);
         })
