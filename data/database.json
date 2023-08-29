@@ -31,12 +31,6 @@
       "id": 8
     },
     {
-      "title": "test 2 setTimeout added to test button transition",
-      "author": "",
-      "body": "test 2 ",
-      "id": 9
-    },
-    {
       "title": "Smoke Test",
       "author": "",
       "body": "Smoke Test",
@@ -47,6 +41,12 @@
       "author": "Jack",
       "body": "Default Author Fixed",
       "id": 11
+    },
+    {
+      "title": "Final Test",
+      "author": "Jack",
+      "body": "Final Test",
+      "id": 12
     }
   ]
 }
