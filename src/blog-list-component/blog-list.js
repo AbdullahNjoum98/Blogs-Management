@@ -1,4 +1,4 @@
-import Blog from './Blog';
+import Blog from '../blog-component/blog';
 
 const BlogsList = ({ blogs, title }) => {
     return (

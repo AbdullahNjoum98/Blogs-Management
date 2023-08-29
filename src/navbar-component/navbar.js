@@ -1,15 +1,18 @@
+import { Link } from "react-router-dom";
+import { createUrl, homeUrl } from "../helpers/constants";
+
 const  Navbar = () => {
     return (
         <nav className="navbar">
-            <h1>Blog Management System</h1>
+            <Link to={homeUrl}><h1>Blog Management System</h1></Link>
             <div className="links">
-                <a href="/">Home</a>
-                <a href="/create"
+                <Link to={homeUrl}>Home</Link>
+                <Link to={createUrl}
                    style={{
                     color: "white",
                     backgroundColor: '#f1356d',
                     borderRadius: '8px'
-                   }}>Create a New Blog</a>
+                   }}>Create a New Blog</Link>
             </div>
         </nav>
     );
