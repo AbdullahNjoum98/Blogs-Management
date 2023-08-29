@@ -12,18 +12,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-    <Router>
-      <div className="App">
-        <Navbar />
       <div className="content"></div>
-        <Routes>
-          <Route path={homeUrl} element={<Home />}/>
-          <Route path={createUrl} element={<Create />}/>
-          <Route path={`${blogsUrl}/:id`} element={<BlogDetails />}/>
-          <Route path="*" element={<NotFound />}/>
-        </Routes>
-      </div>
-    </Router>
         <Routes>
           <Route path={homeUrl} element={<Home />}/>
           <Route path={createUrl} element={<Create />}/>
