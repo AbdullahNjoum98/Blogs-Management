@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { createUrl, homeUrl } from "./Constants";
+import { createUrl, homeUrl } from "../helpers/constants";
 
 const  Navbar = () => {
     return (

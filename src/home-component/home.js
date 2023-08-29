@@ -1,6 +1,6 @@
-import useFetch from "./useFetch";
-import BlogList from './BlogList';
-import { baseUrl, blogsUrl } from "./Constants";
+import useFetch from "../hooks/api-hooks/useFetch";
+import BlogList from '../blog-list-component/blog-list';
+import { baseUrl, blogsUrl } from "../helpers/constants";
 
 const Home = () => {
     const url = `${baseUrl}${blogsUrl}`;

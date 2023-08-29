@@ -1,6 +1,6 @@
 // useFetch custom hook
 import { useState, useEffect } from "react";
-import { GET } from "./Constants";
+import { GET } from "../../helpers/constants";
 const useFetch = (url) => {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);

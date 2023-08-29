@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { blogsUrl } from "./Constants";
+import { blogsUrl } from "../helpers/constants";
 
 const Blog = ({ blog }) => {
     return (
