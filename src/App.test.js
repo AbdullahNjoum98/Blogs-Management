@@ -3,6 +3,9 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const titleElement = screen.getByText(/Blog Management System/i);
+  const createButton = screen.getByText(/Create a New Blog/i);
+  
+  expect(titleElement).toBeInTheDocument();
+  expect(createButton).toBeInTheDocument();
 });

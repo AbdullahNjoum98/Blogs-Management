@@ -6,8 +6,8 @@ const  Navbar = () => {
         <nav className="navbar">
             <Link to={homeUrl}><h1>Blog Management System</h1></Link>
             <div className="links">
-                <Link to={homeUrl}>Home</Link>
-                <Link to={createUrl}
+                <Link role="home" to={homeUrl}>Home</Link>
+                <Link role="create" to={createUrl}
                    style={{
                     color: "white",
                     backgroundColor: '#f1356d',
