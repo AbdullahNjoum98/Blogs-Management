@@ -15,7 +15,9 @@ Please note that json server provides a set of HTTP Verbs that can be used local
 UIs:
 1- Main/Home Page:
 <img width="599" alt="image" src="https://github.com/AbdullahNjoum98/Blogs-Management/assets/56254725/abb9b58b-5a09-4199-9e37-0f0edb8c6320">
+-------------------------------------------------------
 2- Create Blog Page:
 <img width="599" alt="image" src="https://github.com/AbdullahNjoum98/Blogs-Management/assets/56254725/67c1400c-1f74-4328-9cea-76976e2a42b8">
+-------------------------------------------------------
 3- Blog Details:
 <img width="559" alt="image" src="https://github.com/AbdullahNjoum98/Blogs-Management/assets/56254725/5eea5870-360d-4e91-8dd1-43661fbf2251">
