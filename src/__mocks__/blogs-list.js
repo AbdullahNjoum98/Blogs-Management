@@ -1,4 +1,4 @@
-// __mocks__/BlogList.js
+// __mocks__/blogList.js
 import React from 'react';
 
 const BlogListMock = () => {

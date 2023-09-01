@@ -12,7 +12,7 @@ jest.mock('../blog-list-component/blog-list', () => {
     return require('../__mocks__/blogs-list').default;
  });
 
-test('renders loading state', () => {
+test('should render loading state when useFetch returns loading', () => {
   // Set the mock loading state
   require('../hooks/api-hooks/useFetch').default.mockReturnValue({
     data: null,
@@ -25,7 +25,7 @@ test('renders loading state', () => {
   expect(loadingElement).toBeInTheDocument();
 });
 
-test('renders error state', () => {
+test('should render error state when useFetch throws error', () => {
   require('../hooks/api-hooks/useFetch').default.mockReturnValue({
     data: null,
     loading: false,
@@ -37,7 +37,7 @@ test('renders error state', () => {
   expect(errorElement).toBeInTheDocument();
 });
 
-test('renders blogs', () => {
+test('should render blogs when being returned from useFetch', () => {
   // Set the mock blogs data
   const mockBlogs = [
     { id:1, title: 'Testing Blog', author:'Testing Author', body: 'Testing body' }

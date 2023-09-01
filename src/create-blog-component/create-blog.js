@@ -29,20 +29,23 @@ const Create = () => {
         <div className="create">
             <h2>Add a new Blog</h2>
             <form onSubmit={handleSubmit}>
-                <label>Blog title:</label>
-                <input  value={title}
+                <label htmlFor="title">Blog title:</label>
+                <input  id="title"
+                        value={title}
                         onChange={(e) => setTitle(e.target.value)}
                         type="text"
                         required/>
-                <label>Blog author:</label>
-                <select value={author}
+                <label htmlFor="author">Blog author:</label>
+                <select id="author" 
+                        value={author}
                         onChange={(e) => setAuthor(e.target.value)}>
                     {authors.map(author => (
                         <option>{author}</option>
                     ))}
                 </select>
-                <label>Blog body:</label>
-                <textarea required
+                <label htmlFor="body">Blog body:</label>
+                <textarea id="body"
+                          required
                           value={body}
                           onChange={(e) => setBody(e.target.value)}></textarea>
                 { !loading && <button>Add Blog</button>}   

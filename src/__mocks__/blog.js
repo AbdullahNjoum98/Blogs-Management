@@ -1,8 +1,10 @@
-// __mocks__/BlogItem.js
+// __mocks__/blog.js
 import React from 'react';
 
-const BlogMock = ({ title }) => {
-  return <div>{title}</div>; // Mocked rendering behavior
+const BlogMock = () => {
+  return (
+    <div data-testid="mocked-blog">Mocked Blog Component</div>
+  );
 };
 
 export default BlogMock;
